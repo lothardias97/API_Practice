@@ -14,6 +14,8 @@ public class authAPI {
                 "    \"password\" : \"password123\"\n" +
                 "}";
 
+        String Uri = "https://restful-booker.herokuapp.com/auth";
+
         //Perform authentication and get the token
         Response authMethod  = given().contentType(ContentType.JSON).body(payLoad).post("https://restful-booker.herokuapp.com/auth");
         System.out.println(("Authentication Response"+authMethod.asString()));
