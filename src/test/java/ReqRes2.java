@@ -43,7 +43,7 @@ public class ReqRes2 {
 
         //Put Method
         String payLoadPut = "{\n" +
-                "    \"name\": \"lotharrrrrrrrrrrr\",\n" +
+                "    \"name\": \"lotharrrrrrrrrrrrrr\",\n" +
                 "    \"job\": \"wembley resident\"\n" +
                 "}";
         Response putMethod = given().contentType(ContentType.JSON).body(payLoadPut).put("https://reqres.in/api/users/2");
